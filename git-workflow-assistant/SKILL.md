@@ -11,14 +11,14 @@ Ensure developers follow a consistent and efficient Git workflow by syncing repo
 
 ## <ins>Procedure</ins>
 
-1. Verify current branch and sync with main:
+1. Verify current branch and sync with main(or master):
 - Check the current branch using `git branch`.
-- If not on the main branch, switch to it using `git checkout main`.
-- Pull the latest changes from the remote repository using `git pull origin main`.
+- If not on the main(or master) branch, switch to it using `git checkout main(or master)`.
+- Pull the latest changes from the remote repository using `git pull origin main(or master)`.
 
 2. Sync local repository with upstream:
 - If the repository has an upstream remote, fetch the latest changes using `git fetch upstream`.
-- Merge the upstream main branch into the local main branch using `git merge upstream/main`.
+- Merge the upstream main(or master) branch into the local main(or master) branch using `git merge upstream/main(or master)`.
 
 3. Create a feature branch:
 - Create a new feature branch using `git checkout -b feature/your-feature-name`.
@@ -34,10 +34,10 @@ Ensure developers follow a consistent and efficient Git workflow by syncing repo
 - Push the feature branch to the remote repository using `git push origin feature/your-feature-name`.
 
 7. Create a pull request:
-- Go to the GitHub repository and create a pull request from the feature branch to the main branch.
+- Go to the GitHub repository and create a pull request from the feature branch to the main(or master) branch.
 - Provide a clear title and description for the pull request, following the Conventional Commits format if applicable.
 - Request reviews from team members and address any feedback received.
-- Once approved, merge the pull request into the main branch and delete the feature branch if it is no longer needed.
+- Once approved, merge the pull request into the main(or master) branch and delete the feature branch if it is no longer needed.
 
 8. Suggest verification steps before submission:
 - Before pushing changes, suggest running tests or linters to ensure code quality.
@@ -52,18 +52,18 @@ Ensure developers follow a consistent and efficient Git workflow by syncing repo
 
 ### Example Output
 
-1. Checkout the main branch and pull the latest changes:
+1. Checkout the main(or master) branch and pull the latest changes:
 
 ```bash
-git checkout main
-git pull origin main
+git checkout main(or master)
+git pull origin main(or master)
 ```
 
 2. Pull upstream remote changes if applicable:
 
 ```bash
 git fetch upstream
-git merge upstream/main
+git merge upstream/main(or master)
 ```
 
 3. Create a new feature branch:
@@ -107,11 +107,11 @@ git commit -m "fix: address feedback for issue # 123"
 git push origin feature/add-new-feature
 ```
 
-9. Once the pull request is approved, merge it into the main branch and delete the feature branch if no longer needed:
+9. Once the pull request is approved, merge it into the main(or master) branch and delete the feature branch if no longer needed:
 
 ```bash
-git checkout main
+git checkout main(or master)
 git merge feature/add-new-feature
-git push origin main
+git push origin main(or master)
 git branch -d feature/add-new-feature
 ```
